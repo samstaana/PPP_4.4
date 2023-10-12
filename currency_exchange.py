@@ -40,6 +40,9 @@ class Currency:
         if self.unit != 'USD':
             res.changeTo('USD')
         return res
+    
+    #Defines the '+' operator. If other is a Currency object, the currency values are added and the result will be the unit of self. If other is an int or a float, other will be treated as a USD value.
+        pass
 
     def __sub__(self, other):
         if type(other) == int or type(other) == float:
@@ -57,13 +60,6 @@ class Currency:
         if self.unit != 'USD':
             res.changeto('USD')
         return res
-
-
-
-
-
-        #Defines the '+' operator. If other is a Currency object, the currency values are added and the result will be the unit of self. If other is an int or a float, other will be treated as a USD value.
-        pass
 
 
 
